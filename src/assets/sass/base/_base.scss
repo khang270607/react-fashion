@@ -1,0 +1,108 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-manrope);
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    height: 999999px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+a,
+img,
+button,
+input,
+label,
+textarea,
+select {
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+input,
+textarea {
+    background: transparent;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+a,
+button {
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+:root {
+    --font-manrope: "Manrope", sans-serif;
+    --font-roboto: "Roboto Slab", serif;
+    --color-common: #f1deb4;
+    --srcollbar-bg: rgba(0, 0, 0, 0);
+    --menu-scrollbar: rgba(22, 24, 35, 0.2);
+}
+
+.container {
+    width: 1199px;
+}
+
+.separate {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: rgba(210, 208, 192, 0.21);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+    border-radius: 0;
+    width: 2px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    // background: transparent;
+    background-color: var(--menu-scrollbar);
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    // background: transparent;
+    background-color: var(--srcollbar-bg);
+}
